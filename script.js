@@ -115,7 +115,39 @@ document.addEventListener('DOMContentLoaded', function () {
             image: 'CategDry.png', 
 
             products: [
-                  
+                {
+                    id: '⚡️120u/45u🔬',
+                    flag: '🇨🇭',
+                    name: '⚡️120u/45u🔬',
+                    farm: '🍫🇨🇭SWISS-FARMS🇨🇭⛰️',
+                    promoEligible: true,
+                    type: 'Filtre/Dry',
+                    image: 'Product120M.jpg',
+                    images: [
+                        'Product120R.jpg',
+                        'Product120B.jpg',
+                        'Product120Z.jpg',
+                        'Product120F.jpg',
+                        ],
+                    video: 'Video120M.mp4',
+                    description: '',
+                     // 👇 NOUVELLE STRUCTURE
+                    variantTitle: 'Choisis ton goût 🥣 :',
+                    jars: [
+                        { name: 'FreakShow', emoji: '🎬', colorClass: 'style-red' },
+                        { name: 'RS 11', emoji: '🏆', colorClass: 'style-purple' },
+                        { name: 'El Mero', emoji: '🚇', colorClass: 'style-brown' },          
+                        { name: 'Black Truffle', emoji: '🧆', colorClass: 'style-tangier' },
+                        { name: 'Skittle', emoji: '🍡', colorClass: 'style-grappe' }
+                    ],
+                    tarifs: [
+                        { weight: '5g', price: 50.00 },
+                        { weight: '10g', price: 80.00 },
+                        { weight: '20g', price: 150.00 },
+                        { weight: '50g', price: 300.00 },
+                        { weight: '100g', price: 500.00 },
+                    ]
+                },
                 {
                     id: '🌟GOLD CROWN USA🇺🇸🐝',
                     flag: '🇺🇸',
@@ -181,6 +213,54 @@ document.addEventListener('DOMContentLoaded', function () {
             image: 'CategFrozen.png', 
 
             products: [
+                 {
+                    id: '⚡️PLASMA static🧤',
+                    flag: '🇺🇸',
+                    name: '⚡️PLASMA static🧤',
+                    farm: 'BLOMM and PRESS 🇺🇸🔱',
+                    promoEligible: true,
+                    type: 'Filtre/Dry',
+                    image: 'ProductPlasma.png',
+                    images: [
+                        'ProductGP.jpg',
+                        'ProductBL.jpg',
+                        'ProductCM.jpg',
+                        ],
+                    videos:[ 'VideoGP.mp4','VideoBL.mp4','VideoCM.mp4'],
+                    description: '',
+                     // 👇 NOUVELLE STRUCTURE
+                    variantTitle: 'Choisis ton goût 🥣 :',
+                    jars: [
+                        { name: 'CEREAL-MILK', emoji: '🍼🥣🌾', colorClass: 'style-yellow' },
+                        { name: 'BLUE LOBSTER', emoji: '🔵🦞🏆', colorClass: 'style-passion' },
+                        { name: 'GIRAFE PUZZY', emoji: '🦒🧩', colorClass: 'style-brown' },          
+                    ],
+                    tarifs: [
+                        { weight: '5g', price: 50.00 },
+                        { weight: '10g', price: 80.00 },
+                        { weight: '20g', price: 150.00 },
+                        { weight: '50g', price: 300.00 },
+                        { weight: '100g', price: 500.00 },
+                    ]
+                },
+                {
+                    id: '🍫Frozen-Sift🥶🧬',
+                    flag: '🧊',
+                    name: '🍫 Frozen-Sift 🥶🧬',
+                    farm: 'JWC\'Selection 🧞‍♂️',
+                    promoEligible: true,
+                    type: 'Frozen',
+                    image: 'ProductFS.jpg',
+                    video: 'VideoFS.mp4',
+                    description: '',
+                    tarifs: [
+                        { weight: '5g', price: 70.00 },
+                        { weight: '10g', price: 120.00 },
+                        { weight: '25g', price: 290.00 },
+                        { weight: '50g', price: 450.00 },
+                        { weight: '100g', price: 700.00 },
+                    ]
+                },
                 {
                     id: '✅Exotique thaï 🧬',
                     flag: '🧊',
