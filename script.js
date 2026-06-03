@@ -236,12 +236,11 @@ document.addEventListener('DOMContentLoaded', function () {
                         { name: 'GIRAFE PUZZY', emoji: '🦒🧩', colorClass: 'style-brown' },          
                     ],
                     tarifs: [
-                        { weight: '5g', price: 50.00 },
-                        { weight: '10g', price: 80.00 },
-                        { weight: '20g', price: 150.00 },
-                        { weight: '50g', price: 300.00 },
-                        { weight: '100g', price: 500.00 },
-                    ]
+    { weight: '5g', price: 130.00, oldPrice: 180.00 },
+    { weight: '10g', price: 260.00, oldPrice: 300.00 },
+    { weight: '20g', price: 450.00, oldPrice: 600.00 },
+    { weight: '50g', price: 1100.00, oldPrice: 1350.00 },
+]
                 },
                 {
                     id: '🍫Frozen-Sift🥶🧬',
@@ -1130,17 +1129,24 @@ function renderProductListSimple(categoryId) {
             variantsHTML = `<div class="product-options-container" style="margin-bottom: 15px;"><label style="color: #8e8e93; font-size: 0.9rem; margin-bottom: 5px; display:block;">Choisir :</label><select id="product-variant-select" style="width: 100%; padding: 12px; border-radius: 8px; background: #2c2c2e; color: white; border: 1px solid #3a3a3c;">${product.options.map(opt => `<option value="${opt}">${opt}</option>`).join('')}</select></div>`;
         }
     
-        let tarifsHTML = product.tarifs.map(tarif => `
-            <div class="tarif-item">
-                <div class="box-tarif">
-                    <div class="tarif-wieght">${tarif.weight}</div>
-                    <div class="tarif-price">${tarif.price.toFixed(2)}€</div>
+       let tarifsHTML = product.tarifs.map(tarif => {
+    // Si un ancien prix existe, on crée le texte barré
+    let oldPriceHTML = tarif.oldPrice ? `<span style="text-decoration: line-through; color: #ff3b30; font-size: 16px; margin-left: 5px;">${tarif.oldPrice.toFixed(2)}€</span>` : '';
+    
+    return `
+        <div class="tarif-item">
+            <div class="box-tarif">
+                <div class="tarif-wieght">${tarif.weight}</div>
+                <div class="tarif-price" style="font-size: 20px;">
+                    ${tarif.price.toFixed(2)}€ ${oldPriceHTML}
                 </div>
-                <button class="add-to-cart-btn" data-product-id="${product.id}" data-weight="${tarif.weight}" data-price="${tarif.price}">
-                    <svg width="20" height="20"><use href="#icon-cart"/></svg>
-                </button>
             </div>
-        `).join('');
+            <button class="add-to-cart-btn" data-product-id="${product.id}" data-weight="${tarif.weight}" data-price="${tarif.price}">
+                <svg width="20" height="20"><use href="#icon-cart"/></svg>
+            </button>
+        </div>
+    `;
+}).join('');
     
         let descriptionHTML = product.description ? `<p class="product-description">${product.description.replace(/\n/g, '<br>')}</p>` : '';
     
