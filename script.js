@@ -483,6 +483,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
       products: [
         {
+          id: "Banana Kush🍌🌳",
+          flag: "🇪🇸",
+          name: "Banana Kush🍌🌳",
+          farm: "🌾 No Farm 🌾",
+          promoEligible: true,
+          type: "Weed",
+          image: "ProductBana.jpg",
+          video: "VideoBana.mp4",
+          description: "",
+          tarifs: [
+            { weight: "6.5g", price: 50.0 },
+            { weight: "15g", price: 100.0 },
+            { weight: "50g", price: 250.0 },
+            { weight: "100g", price: 450.0 },
+          ],
+        },
+        {
           id: "🥦🇳🇱AMNESIA 🇳🇱🥦",
           flag: "🇳🇱",
           name: "🥦🇳🇱AMNESIA 🇳🇱🥦",
