@@ -48,6 +48,13 @@ document.addEventListener("DOMContentLoaded", function () {
       text: "WHATSAPP 📞",
     },
     {
+      name: "INSTAGRAM 🛰️",
+      url: "https://www.instagram.com/jwc_75?igsh=MXNmcjBuYWE0MzZlaA%3D%3D&utm_source=qr", // Formaté pour lien direct Signal
+      id: "instagram",
+      className: "instagram",
+      text: "INSTAGRAM 🛰️ ",
+    },
+    {
       name: "SIGNAL 🛰️",
       url: "https://signal.me/#p/+33627949071", // Formaté pour lien direct Signal
       id: "signal",
