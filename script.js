@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const contactLinks = [
     {
       name: "CANAL POTATO 🥔🔗",
-      url: "https://m.tutuduanyu.org/jwcoffee",
+      url: "https://tatokdym.org/JWC75coffee",
       id: "potato-canal",
       className: "potato",
       text: "🔗 CANAL POTATO 🥔",
