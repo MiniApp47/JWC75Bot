@@ -123,6 +123,23 @@ document.addEventListener("DOMContentLoaded", function () {
         // VARIÉTÉS SÉPARÉES : ⚡️120u/45u🔬 CBD SWISS-FARMS
         // ============================================================
         {
+          id: "✅ GARCIA🇲🇽🍫",
+          flag: "🇲🇦",
+          name: "✅ GARCIA🇲🇽🍫",
+          farm: "JWC'Selection 🧞‍♂️",
+          promoEligible: true,
+          type: "Filtre/Dry",
+          image: "ProductG.jpg",
+          video: "VideoG.mp4",
+          description:" -Filtre X3🍫⛰️🇲🇦 Dry-sift / 90u",
+          tarifs: [
+            { weight: "10g", price: 50.0 },
+            { weight: "20g", price: 100.0 },
+            { weight: "50g", price: 250.0 },
+            { weight: "100g", price: 400.0 },
+          ],
+        },
+        {
           id: "Cherries🍒🍫",
           flag: "🇲🇦",
           name: "Cherries🍒🍫",
@@ -577,6 +594,25 @@ document.addEventListener("DOMContentLoaded", function () {
       image: "CategWeed.png", // Ton image de catégorie Weed
 
       products: [
+        {
+          id: "White Gelato Runtz 🍇",
+          flag: "🇺🇸",
+          name: "White Gelato Runtz 🍇",
+          farm: "Cali USA🇺🇸🧬🥇",
+          promoEligible: true,
+          type: "Weed",
+          image: "ProductWGR.jpg",
+          video: "VideoWGR.mp4",
+          description: "⚡️⚡️Nouveauté⚡️⚡️ \n\n Ce qui distingue la White Gelato X Runtz🧬, c'est sa palette de saveurs complexe et décadente. Avec des nuances de fruits 🍈 🍇tropicaux🏝️, de baies sucrées 🫐et de crème vanillée 🍦, chaque bouffée 🌬️révèle une explosion de goûts 👅qui ravit les papilles",
+          tarifs: [
+            { weight: "5g", price: 50.0 },
+            { weight: "10g", price: 100.0 },
+            { weight: "25g", price: 200.0 },
+            { weight: "50g", price: 350.0 },
+            { weight: "100g", price: 600.0 },
+            { weight: "500g", price: 2700.0 },
+          ],
+        },
         {
           id: "Banana Kush🍌🌳",
           flag: "🇪🇸",
