@@ -601,7 +601,7 @@ document.addEventListener("DOMContentLoaded", function () {
           farm: "Cali USA🇺🇸🧬🥇",
           promoEligible: true,
           type: "Weed",
-          image: "ProductWGR.jpg",
+          image: "ProductWGR.png",
           video: "VideoWGR.mp4",
           description: "⚡️⚡️Nouveauté⚡️⚡️ \n\n Ce qui distingue la White Gelato X Runtz🧬, c'est sa palette de saveurs complexe et décadente. Avec des nuances de fruits 🍈 🍇tropicaux🏝️, de baies sucrées 🫐et de crème vanillée 🍦, chaque bouffée 🌬️révèle une explosion de goûts 👅qui ravit les papilles",
           tarifs: [
