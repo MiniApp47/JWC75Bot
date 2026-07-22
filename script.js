@@ -120,6 +120,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
       products: [
          {
+          id: "€41 💶",
+          flag: "🇲🇦",
+          name: "€41 💶",
+          farm: "✅ NO FAMRS ✅",
+          promoEligible: true,
+          type: "Filtre/Dry",
+          image: "Product41.jpg",
+          video: "Video41.mp4",
+          description:" Filtre X3🍫⛰️🇲🇦\n Dry-sift / 90u",
+          tarifs: [
+            { weight: "10g", price: 50.0 },
+            { weight: "20g", price: 100.0 },
+            { weight: "50g", price: 250.0 },
+            { weight: "100g", price: 400.0 },
+          ],
+        },
+         {
           id: "black-pattaya 🐍🏴‍☠️",
           flag: "🇲🇦",
           name: "Black Pattaya 🐍🏴‍☠️",
@@ -432,6 +449,24 @@ document.addEventListener("DOMContentLoaded", function () {
       image: "CategFrozen.png",
 
       products: [
+         {
+          id: "✅G.M.O✅",
+          flag: "🇲🇦",
+          name: "✅G.M.O✅",
+          farm: "Mountain brother farms🏔️🇲🇦",
+          promoEligible: true,
+          type: "Frozen",
+          image: "ProductGM.jpg",
+          video: "VideoGM.mp4",
+          description: "🧊🍫Frozen-sift🥶🧬",
+          tarifs: [
+            { weight: "5g", price: 50.0 },
+            { weight: "10g", price: 100.0 },
+            { weight: "25g", price: 250.0 },
+            { weight: "50g", price: 400.0 },
+            { weight: "100g", price: 600.0 },
+          ],
+        },
          {
           id: "🫒OliveF Frozen 🧊⚡️",
           flag: "🧊",
