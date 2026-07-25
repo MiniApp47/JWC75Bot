@@ -258,7 +258,7 @@ document.addEventListener("DOMContentLoaded", function () {
             { weight: "100g", price: 400.0 },
           ],
         },
-        {
+        /* {
           id: "120u_freakshow_cbd",
           flag: "🇨🇭",
           name: "🎬 FREAKSHOW",
@@ -341,7 +341,7 @@ document.addEventListener("DOMContentLoaded", function () {
           type: "Filtre/Dry",
           image: "Product120Z.jpg",
           /*     video: 'Video120M.mp4',
-           */ description:
+            description:
             " — 120u/45u 🔬 \n\n 🧬 Sélection Premium Swiss-Farms\n🥣 Terpènes intenses & texture parfaite",
           tarifs: [
             { weight: "5g", price: 50.0 },
@@ -350,7 +350,7 @@ document.addEventListener("DOMContentLoaded", function () {
             { weight: "50g", price: 300.0 },
             { weight: "100g", price: 500.0 },
           ],
-        },
+        }, */
         /* {
                     id: '⚡️120u/45u🔬',
                     flag: '🇨🇭',
