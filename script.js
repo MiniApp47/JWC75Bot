@@ -120,6 +120,57 @@ document.addEventListener("DOMContentLoaded", function () {
 
       products: [
          {
+          id: "✅WEDDING-CAKE ✅  ",
+          flag: "🇲🇦",
+          name: "✅ WEDDING-CAKE ✅ ",
+          farm: "⭐️ Six Star ⭐️",
+          promoEligible: true,
+          type: "Filtre/Dry",
+          image: "ProductWCC.jpg",
+          video: "VideoWCC.mp4",
+          description:" Filtre X3🍫⛰️🇲🇦\n 90u/120u premium ",
+          tarifs: [
+            { weight: "10g", price: 50.0 },
+            { weight: "20g", price: 100.0 },
+            { weight: "50g", price: 250.0 },
+            { weight: "100g", price: 400.0 },
+          ],
+        },
+         {
+          id: "✅CEREAL-MILK ✅ ",
+          flag: "🇲🇦",
+          name: "✅ CEREAL-MILK ✅ ",
+          farm: "⭐️ Six Star ⭐️",
+          promoEligible: true,
+          type: "Filtre/Dry",
+          image: "ProductCC.jpg",
+          video: "VideoCC.mp4",
+          description:" Filtre X3🍫⛰️🇲🇦\n 90u/120u premium ",
+          tarifs: [
+            { weight: "10g", price: 50.0 },
+            { weight: "20g", price: 100.0 },
+            { weight: "50g", price: 250.0 },
+            { weight: "100g", price: 400.0 },
+          ],
+        },
+         {
+          id: "✅COOKIES ✅",
+          flag: "🇲🇦",
+          name: "✅COOKIES ✅",
+          farm: "⭐️ Six Star ⭐️",
+          promoEligible: true,
+          type: "Filtre/Dry",
+          image: "ProductSS.jpg",
+          video: "VideoSS.mp4",
+          description:" Filtre X3🍫⛰️🇲🇦\n 90u/120u premium ",
+          tarifs: [
+            { weight: "10g", price: 50.0 },
+            { weight: "20g", price: 100.0 },
+            { weight: "50g", price: 250.0 },
+            { weight: "100g", price: 400.0 },
+          ],
+        },
+         {
           id: "€41 💶",
           flag: "🇲🇦",
           name: "€41 💶",
@@ -570,6 +621,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
       products: [
         {
+          id: "✅FORBIDDEN ",
+          flag: "🇨🇭",
+          name: "✅ FORBIDDEN ",
+          farm: "MOZART FARMS 🎻",
+          promoEligible: true,
+          type: "Static",
+          image: "ProductF.jpg",
+          video: "",
+          description: "",
+          tarifs: [
+            { weight: "5g", price: 110.0 },
+            { weight: "10g", price: 200.0 },
+            { weight: "20g", price: 400.0 },
+            { weight: "50g", price: 950.0 },
+          ],
+        },
+        {
           id: "Z M O🍯🍯",
           flag: "🇨🇭",
           name: "Z M O 🍯",
@@ -697,6 +765,23 @@ document.addEventListener("DOMContentLoaded", function () {
       image: "CategWeed.png", // Ton image de catégorie Weed
 
       products: [
+        {
+          id: "CHERRY PIE🍒🥧",
+          flag: "🇺🇸",
+          name: "CHERRY PIE🍒🥧",
+          farm: "Cali USA🇺🇸🧬🥇",
+          promoEligible: true,
+          type: "Weed",
+          image: "ProductCP.png",
+          video: "VideoCP.mp4",
+          description: "Les terpènes Cherry Pie🍒🧬 offrent des notes exotiques🍹 de 🍒 aigre-douce, de tons terreux et d'un soupçon d'épices🫚. Vous trouverez ci-dessous une ventilation des terpènes dominants dans cet hybride🧬, ainsi que des arômes et des saveurs 👅associés.",
+          tarifs: [
+            { weight: "5g", price: 50.0 },
+            { weight: "10g", price: 100.0 },
+            { weight: "25g", price: 200.0 },
+            { weight: "50g", price: 350.0 },
+          ],
+        },
         {
           id: "White Gelato Runtz 🍇",
           flag: "🇺🇸",
