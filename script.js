@@ -318,6 +318,44 @@ Profil aromatique :
 
       products: [
         {
+          id: "pineapple🍍✅ ",
+          flag: "🇲🇦",
+          name: "pineapple🍍✅",
+          farm: "HASHSKI-KING🏔️🧬",
+          promoEligible: true,
+          type: "Static",
+          image: "ProductPI.png",
+          video: "VideoPI.mp4",
+          description: `DOUBLE static🧤
+Premium saison 2026⭐️⭐️⭐️⭐️⭐️`,
+          tarifs: [
+            { weight: "10g", price: 140.0 },
+            { weight: "20g", price: 250.0 },
+            { weight: "50g", price: 500.0 },
+            { weight: "100g", price: 850.0 },
+          ],
+        }, 
+        {
+          id: "G.M.O cookies 🍍✅ ",
+          flag: "🇲🇦",
+          name: "G.M.O cookies 🍍✅ ",
+          farm: "Maroco-ketama🏔️🧬",
+          promoEligible: true,
+          type: "Static",
+          image: "ProductGMP.png",
+          video: "VideoGMP.mp4",
+          description: `DOUBLE static🧤
+Premium  ⭐️⭐️⭐️⭐️⭐️ 
+saison : récolte 2026 🇲🇦
+Micron🔬: 139u/73u`,
+          tarifs: [
+            { weight: "10g", price: 140.0 },
+            { weight: "20g", price: 250.0 },
+            { weight: "50g", price: 500.0 },
+            { weight: "100g", price: 850.0 },
+          ],
+        }, 
+        {
           id: "✅peach-oZ🍑🥶 ",
           flag: "🇲🇦",
           name: "✅peach-oZ🍑🥶 ",
