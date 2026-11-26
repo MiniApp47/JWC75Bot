@@ -987,10 +987,44 @@
         .image-modal { display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.9); align-items: center; justify-content: center; }
         .modal-content { max-width: 90%; max-height: 90%; border-radius: 10px; }
         .close-modal { position: absolute; top: 20px; right: 30px; color: white; font-size: 40px; font-weight: bold; cursor: pointer; }
-    </style>
+    
+/* Vérification visuelle d'entrée : ne remplace pas un contrôle d'accès serveur. */
+body.jwc-captcha-locked { overflow:hidden !important; }
+.jwc-captcha-overlay { position:fixed; inset:0; z-index:9999; display:flex; align-items:center; justify-content:center; padding:24px; background:rgba(4,8,15,.97); backdrop-filter:blur(16px); color:#fff; }
+.jwc-captcha-overlay[hidden] { display:none !important; }
+.jwc-captcha-panel { width:100%; max-width:370px; border:1px solid rgba(0,180,216,.7); border-radius:24px; background:linear-gradient(155deg,#1b2031,#0a1219); box-shadow:0 12px 45px rgba(0,180,216,.17); text-align:center; padding:26px 22px; font-family:Arial,sans-serif; }
+.jwc-captcha-icon { font-size:29px; }
+.jwc-captcha-panel h2 { font-size:22px; margin:9px 0; }
+.jwc-captcha-panel p { color:#bcd3de; font-size:14px; line-height:1.55; }
+.jwc-captcha-dial { width:164px; height:164px; margin:20px auto; border:2px solid rgba(0,180,216,.45); border-radius:50%; background:radial-gradient(circle,#18283c,#0b1821); display:grid; place-items:center; position:relative; }
+.jwc-captcha-target { position:absolute; top:-16px; left:calc(50% - 15px); width:30px; background:#0b1821; font-size:22px; color:#38e7b5; border-radius:50%; }
+.jwc-captcha-arrow { display:block; font-size:76px; line-height:1; color:#00d9f0; transform-origin:center; user-select:none; filter:drop-shadow(0 3px 12px rgba(0,217,240,.3)); }
+.jwc-captcha-panel label { display:block; margin:10px 0 12px; font-size:13px; font-weight:700; color:#d5e8ec; }
+#jwc-captcha-slider { width:100%; accent-color:#00b4d8; }
+#jwc-captcha-validate { width:100%; border:0; border-radius:12px; padding:13px 15px; background:linear-gradient(90deg,#00b4d8,#22cba6); color:#00121c; font-size:16px; font-weight:800; margin-top:17px; cursor:pointer; }
+#jwc-captcha-validate:disabled { opacity:.5; cursor:default; }
+.jwc-captcha-result { min-height:20px; margin:12px 0 0; }
+
+</style>
 </head>
 
 <body>
+<div id="jwc-entry-captcha" class="jwc-captcha-overlay" role="dialog" aria-modal="true" aria-labelledby="jwc-captcha-title">
+  <div class="jwc-captcha-panel">
+    <div class="jwc-captcha-icon">🛡️</div>
+    <h2 id="jwc-captcha-title">Vérification d'entrée</h2>
+    <p>Remets la flèche vers le haut pour accéder à l'application.</p>
+    <div class="jwc-captcha-dial" aria-hidden="true">
+      <span class="jwc-captcha-target">↑</span>
+      <span id="jwc-captcha-arrow" class="jwc-captcha-arrow">➤</span>
+    </div>
+    <label for="jwc-captcha-slider">Faire tourner la flèche</label>
+    <input id="jwc-captcha-slider" type="range" min="0" max="360" value="0" step="1" aria-label="Rotation de la flèche">
+    <button id="jwc-captcha-validate" type="button">Vérifier</button>
+    <p id="jwc-captcha-result" class="jwc-captcha-result" aria-live="polite"></p>
+  </div>
+</div>
+
     <div id="page-contact" class="page">
         <div class="page-content">
             <img src="LogoReel.jpg" alt="Logo" class="contact-logo">

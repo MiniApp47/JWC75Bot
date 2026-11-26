@@ -1,5 +1,63 @@
+// Vérification visuelle (côté client uniquement). Les ressources statiques restent
+// accessibles directement : une protection réelle nécessite un serveur.
+function initJwcEntryCaptcha() {
+  const overlay = document.getElementById('jwc-entry-captcha');
+  const slider = document.getElementById('jwc-captcha-slider');
+  const arrow = document.getElementById('jwc-captcha-arrow');
+  const button = document.getElementById('jwc-captcha-validate');
+  const result = document.getElementById('jwc-captcha-result');
+  if (!overlay || !slider || !arrow || !button || !result) return;
+  try {
+    if (sessionStorage.getItem('jwc75_captcha_verified') === '1') {
+      overlay.hidden = true;
+      return;
+    }
+  } catch (_) {}
+  document.body.classList.add('jwc-captcha-locked');
+  let startingAngle = 0;
+  let failures = 0;
+  let lockedUntil = 0;
+  const newChallenge = () => {
+    const options = [35, 65, 110, 150, 195, 230, 265, 300];
+    startingAngle = options[Math.floor(Math.random() * options.length)];
+    slider.value = '0';
+    arrow.style.transform = `rotate(${startingAngle}deg)`;
+  };
+  slider.addEventListener('input', () => {
+    arrow.style.transform = `rotate(${startingAngle + Number(slider.value)}deg)`;
+    result.textContent = '';
+  });
+  button.addEventListener('click', () => {
+    const left = lockedUntil - Date.now();
+    if (left > 0) {
+      result.textContent = `Patiente encore ${Math.ceil(left / 1000)} secondes.`;
+      return;
+    }
+    // La flèche ➤ pointe initialement à droite (90° depuis le haut).
+    const angle = (((90 + startingAngle + Number(slider.value)) % 360) + 360) % 360;
+    const error = Math.min(angle, 360 - angle);
+    if (error <= 10) {
+      try { sessionStorage.setItem('jwc75_captcha_verified', '1'); } catch (_) {}
+      overlay.hidden = true;
+      document.body.classList.remove('jwc-captcha-locked');
+      return;
+    }
+    failures++;
+    if (failures >= 3) {
+      failures = 0;
+      lockedUntil = Date.now() + 30000;
+      result.textContent = 'Trois erreurs : patiente 30 secondes.';
+    } else {
+      result.textContent = `Orientation incorrecte, encore ${3 - failures} essai(s).`;
+    }
+    newChallenge();
+  });
+  newChallenge();
+}
+
 // Attend que le DOM soit entièrement chargé pour exécuter le script
 document.addEventListener("DOMContentLoaded", function () {
+  initJwcEntryCaptcha();
   const tg = window.Telegram.WebApp;
   tg.ready();
   tg.expand();
