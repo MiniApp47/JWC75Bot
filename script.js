@@ -166,6 +166,37 @@ document.addEventListener("DOMContentLoaded", function () {
         }, */
       ],
     },
+       // ============================================================
+    // CATEGORIE 5 : ICE ÔLATOR🍯🇺🇸
+    // ============================================================
+    {
+      id: "CALI WEED 🍀🇺🇸",
+      name: "CALI WEED 🍀🇺🇸",
+      type: "CALI WEED 🍀🇺🇸",
+      quality: "CALI WEED 🍀🇺🇸",
+      image: "CategCaliW.png",
+
+      products: [
+          {
+          id: "JellyLemon🍋‍🟩",
+          flag: "🇺🇸",
+          name: "JellyLemon🍋‍🟩",
+          farm: "TOP SHLEF⚡️",
+          promoEligible: true,
+          type: "Cali Weed",
+          image: "ProductJL.png",
+          video: "VideoJL.mp4",
+          description: "Full Full Gaz⛽️ Full Full Terps👅 \n\n De la Cali TopTopShelf comme on en trouve plus sur le marché profitez en choisi par nos soins en Californie🫡",
+          tarifs: [
+            { weight: "5g", price: 60.0 },
+            { weight: "10g", price: 100.0 },
+            { weight: "25g", price: 200.0 },
+            { weight: "50g", price: 350.0 },
+            { weight: "100g", price: 600.0 },
+          ],
+        }, 
+      ],
+    },
     // ============================================================
     // CATEGORIE 4 :  🇪🇸 DRY/FILTRE 🇲🇦
     // ============================================================
@@ -279,6 +310,31 @@ Profil aromatique :
       image: "CategFrozen.png",
 
       products: [
+         {
+          id: "FROZEN-SIFT🍫🥶",
+          flag: "🇲🇦",
+          name: "FROZEN-SIFT🍫🥶",
+          farm: "VVS TANGER 💎",
+          promoEligible: true,
+          type: "Frozen",
+          image: "ProductFZ.jpg",
+          video: "VideoFZZ.mp4",
+          description: `Saison 🗓️: 2026/2027🏔️
+Micron 🔬: 160u/73u`,
+ variantTitle: "Choisis ton goût 🥣 :",
+          jars: [
+            { name: "Tangieberto", emoji: "🍊🍑", colorClass: "style-brown" },
+            { name: "Melon Guava X Peach Splash", emoji: "🍍🏝️", colorClass: "style-yellow" },
+            { name: 'Forbidden fruit X Dirty burger', emoji: '🍇🍭', colorClass: 'style-purple' },
+          ],
+          tarifs: [
+            { weight: "5g", price: 70.0 },
+            { weight: "10g", price: 120.0 },
+            { weight: "25g", price: 250.0 },
+            { weight: "50g", price: 400.0 },
+            { weight: "100g", price: 750.0 },
+          ],
+        },
          {
           id: "MANDARINA🍊",
           flag: "🇲🇦",
@@ -474,7 +530,7 @@ Premium Cannabis⭐️⭐️⭐️⭐️⭐️`,
                         { weight: "10g", price: 130.0 },
             { weight: "30g", price: 330.0 },
             { weight: "50g", price: 460.0 },
-            { weight: "10g", price: 800.0 },
+            { weight: "100g", price: 800.0 },
 
 /*             { weight: "5g", price: 130.0, oldPrice: 180.0 },
             { weight: "10g", price: 260.0, oldPrice: 300.0 },
@@ -511,18 +567,6 @@ Premium Cannabis⭐️⭐️⭐️⭐️⭐️`,
       products: [ ],
     },
 
-    // ============================================================
-    // CATEGORIE 5 : ICE ÔLATOR🍯🇺🇸
-    // ============================================================
-    {
-      id: "CALI WEED 🍀🇺🇸",
-      name: "CALI WEED 🍀🇺🇸",
-      type: "CALI WEED 🍀🇺🇸",
-      quality: "CALI WEED 🍀🇺🇸",
-      image: "CategCaliW.png",
-
-      products: [],
-    },
 
     {
       id: "MACH",
